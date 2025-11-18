@@ -1,0 +1,12 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Logs éventuels
+*.log
+
+# Dossiers node (si jamais tu fais des tests de scripts JS en local)
+node_modules/
+
+# Fichiers secrets (au cas où quelqu'un ferait une bêtise en local)
+.env
