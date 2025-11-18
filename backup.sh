@@ -11,7 +11,7 @@ echo "🚀 Démarrage du backup des workflows..."
 # 2. Demander à n8n (dans le docker) d'exporter les JSON vers le volume partagé
 # On utilise l'utilisateur 'node' pour éviter les soucis de permissions root
 cd $INFRA_DIR
-docker-compose exec -u node n8n n8n export:workflow --all --output=/backup/workflows
+docker-compose exec -u node n8n n8n export:workflow --all --output=/backup/workflows/all_workflows.json
 
 echo "✅ Export terminé. Vérification git..."
 
